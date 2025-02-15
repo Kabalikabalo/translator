@@ -5,6 +5,8 @@ import spacy
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 from flask_cors import CORS
+import nltk
+nltk.download('wordnet')
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
